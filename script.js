@@ -14,13 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
         let response = "";
         switch(command) {
             case "help":
-                response = "Commands: help, files, games, exit";
+                response = "Commands: help, files, games, exit, menu";
                 break;
             case "files":
                 response = "Download files: <br> <a href='files/sample.txt' target='_blank'>sample.txt</a>";
                 break;
             case "games":
-                response = "Games not available yet. Coming soon!";
+                response = "No games available yet. Coming soon!";
+                break;
+            case "menu":
+                response = document.querySelector(".menu").innerHTML;
                 break;
             case "exit":
                 response = "Goodbye! Refresh to return.";
