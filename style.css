@@ -20,6 +20,10 @@ pre {
     text-align: center;
 }
 
+.menu {
+    color: red;
+}
+
 #terminal {
     padding: 10px;
     background: black;
